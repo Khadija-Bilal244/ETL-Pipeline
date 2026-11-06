@@ -1,0 +1,30 @@
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+airflow_settings.yaml
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Airflow and Astro local state
+.astro/
+airflow.cfg
+airflow.db
+airflow-webserver.pid
+webserver_config.py
+logs/
+
+# Local databases and generated files
+*.sqlite
+*.sqlite3
+*.db
+.DS_Store
+Thumbs.db
